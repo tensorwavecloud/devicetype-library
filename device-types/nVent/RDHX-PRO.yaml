@@ -1,0 +1,70 @@
+---
+manufacturer: nVent
+model: RDHX PRO
+slug: nvent-rdhx-pro
+part_number: RDHX PRO
+u_height: 0
+is_full_depth: false
+comments: >
+  RDHX PRO chilled water cooling units are designed to deliver localized and energy efficient cooling in data centers, featuring toolless, hot-swappable components for maximum uptime and serviceability creating longer lifetime and ensuring customer productivity
+  [nVent RDHX PRO Overview](https://www.nvent.com/en-us/data-solutions/rear-door-heat-exchangers)
+  [nVent RDHX PRO Datasheet](https://nvent.widen.net/s/kn9hnh7tn6/schroff-spec-n00647-rdhxpro-en)
+
+interfaces:
+  - name: eth0
+    type: 1000base-t
+    mgmt_only: true
+    description: Gigabit Ethernet 1
+  - name: eth1
+    type: 1000base-t
+    mgmt_only: true
+    description: Gigabit Ethernet 2
+  - name: rs485
+    type: other
+    mgmt_only: true
+    description: Serial RS485 (Modbus RTU)
+
+power-ports:
+  - name: PSU 01
+    type: iec-60320-c14
+    maximum_draw: 800
+    description: Hot-Swappable Wide Range PSU 1
+  - name: PSU 02
+    type: iec-60320-c14
+    maximum_draw: 800
+    description: Hot-Swappable Wide Range PSU 2
+
+module-bays:
+  - name: PSU 01
+    position: PSU Slot 1
+  - name: PSU 02
+    position: PSU Slot 2
+
+  - name: Main Controller
+    position: Controller Slot 1
+    description: Hot-swappable smart controller with 7" Touch Panel
+
+  - name: Fan 01
+    position: Fan Slot 1
+  - name: Fan 02
+    position: Fan Slot 2
+  - name: Fan 03
+    position: Fan Slot 3
+  - name: Fan 04
+    position: Fan Slot 4
+  - name: Fan 05
+    position: Fan Slot 5
+  - name: Fan 06
+    position: Fan Slot 6
+  - name: Fan 07
+    position: Fan Slot 7
+  - name: Fan 08
+    position: Fan Slot 8
+  - name: Fan 09
+    position: Fan Slot 9
+  - name: Fan 10
+    position: Fan Slot 10
+  - name: Fan 11
+    position: Fan Slot 11
+  - name: Fan 12
+    position: Fan Slot 12

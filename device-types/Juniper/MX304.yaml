@@ -10,7 +10,99 @@ airflow: front-to-rear
 front_image: true
 rear_image: true
 is_full_depth: false
-comments: '[Juniper MX304 Data Sheet](https://www.juniper.net/fr/fr/products/routers/mx-series/mx304-universal-routing-platform.html)'
+comments: >
+  [Juniper MX304 Overview](https://www.juniper.net/documentation/us/en/hardware/mx304/mx304.pdf)
+  [Juniper MX304 Data Sheet](https://www.juniper.net/fr/fr/products/routers/mx-series/mx304-universal-routing-platform.html)
+
+console-ports:
+  - name: Console 01
+    type: rj-45
+  - name: Console 02
+    type: rj-45
+
+power-ports:
+  - name: PSU0
+    type: iec-60320-c20
+    maximum_draw: 2200
+  - name: PSU1
+    type: iec-60320-c20
+    maximum_draw: 2200
+
+interfaces:
+  - name: mgmt0
+    type: 1000base-t
+    mgmt_only: true
+
+  - name: mgmt1
+    type: 1000base-t
+    mgmt_only: true
+
+  - name: et-0/0/1
+    type: 100gbase-x-qsfp28
+  - name: et-0/0/2
+    type: 100gbase-x-qsfp28
+  - name: et-0/0/3
+    type: 100gbase-x-qsfp28
+  - name: et-0/0/4
+    type: 100gbase-x-qsfp28
+  - name: et-0/0/5
+    type: 100gbase-x-qsfp28
+  - name: et-0/0/6
+    type: 100gbase-x-qsfp28
+  - name: et-0/0/7
+    type: 100gbase-x-qsfp28
+  - name: et-0/0/8
+    type: 100gbase-x-qsfp28
+  - name: et-0/0/9
+    type: 100gbase-x-qsfp28
+  - name: et-0/0/10
+    type: 100gbase-x-qsfp28
+  - name: et-0/0/11
+    type: 100gbase-x-qsfp28
+  - name: et-0/0/12
+    type: 100gbase-x-qsfp28
+  - name: et-0/0/13
+    type: 100gbase-x-qsfp28
+  - name: et-0/0/14
+    type: 100gbase-x-qsfp28
+  - name: et-0/0/15
+    type: 100gbase-x-qsfp28
+  - name: et-0/0/16
+    type: 100gbase-x-qsfp28
+
+  - name: et-0/1/1
+    type: 100gbase-x-qsfp28
+  - name: et-0/1/2
+    type: 100gbase-x-qsfp28
+  - name: et-0/1/3
+    type: 100gbase-x-qsfp28
+  - name: et-0/1/4
+    type: 100gbase-x-qsfp28
+  - name: et-0/1/5
+    type: 100gbase-x-qsfp28
+  - name: et-0/1/6
+    type: 100gbase-x-qsfp28
+  - name: et-0/1/7
+    type: 100gbase-x-qsfp28
+  - name: et-0/1/8
+    type: 100gbase-x-qsfp28
+  - name: et-0/1/9
+    type: 100gbase-x-qsfp28
+  - name: et-0/1/10
+    type: 100gbase-x-qsfp28
+  - name: et-0/1/11
+    type: 100gbase-x-qsfp28
+  - name: et-0/1/12
+    type: 100gbase-x-qsfp28
+  - name: et-0/1/13
+    type: 100gbase-x-qsfp28
+  - name: et-0/1/14
+    type: 100gbase-x-qsfp28
+  - name: et-0/1/15
+    type: 100gbase-x-qsfp28
+  - name: et-0/1/16
+    type: 100gbase-x-qsfp28
+
 module-bays:
   - name: PEM0
     label: PSU 0
@@ -20,11 +112,11 @@ module-bays:
     position: PSU1
   - name: RE0
     label: Routing Engine 0
-    position: '0'
+    position: "0"
   - name: RE1
     label: Routing Engine 1
-    position: '1'
+    position: "1"
   - name: LCMIC0
-    position: '0'
+    position: "0"
   - name: LCMIC1
-    position: '1'
+    position: "1"

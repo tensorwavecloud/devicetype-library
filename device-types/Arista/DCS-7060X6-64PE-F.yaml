@@ -1,15 +1,15 @@
 ---
 manufacturer: Arista
-model: DCS-7060X6-64PE
-slug: arista-dcs-7060x6-64pe
-part_number: DCS-7060X6-64PE
+model: DCS-7060X6-64PE-F
+slug: arista-dcs-7060x6-64pe-f
+part_number: DCS-7060X6-64PE-F
 u_height: 2
 is_full_depth: true
 airflow: front-to-rear
 weight: 21
 weight_unit: kg
 comments: >
-  The Arista DCS-7060X6-64PE is a 2RU fixed-configuration switch featuring 64 OSFP800 ports and 2 SFP+ ports, delivering up to 51.2 Tbps of throughput.
+  The Arista DCS-7060X6-64PE-F is a 2RU fixed-configuration switch featuring 64 OSFP800 ports and 2 SFP+ ports, delivering up to 51.2 Tbps of throughput.
   It supports flexible port configurations including 800G, 400G, 200G, and 100G, making it ideal for AI/ML workloads and hyperscale data centers.
   [7060X6 Series Datasheet](https://www.arista.com/assets/data/pdf/Datasheets/7060X6-Datasheet.pdf)
 
@@ -17,13 +17,23 @@ console-ports:
   - name: Console
     type: rj-45
 
+power-ports:
+  - name: PSU 01
+    type: iec-60320-c14
+    maximum_draw: 2400
+  - name: PSU 02
+    type: iec-60320-c14
+    maximum_draw: 2400
+
 interfaces:
   - name: Management1
     type: 1000base-t
+
   - name: SFP1
     type: 25gbase-x-sfp28
   - name: SFP2
     type: 25gbase-x-sfp28
+
   - name: Ethernet1/1
     type: 800gbase-x-osfp
   - name: Ethernet2/1
@@ -156,7 +166,7 @@ interfaces:
 module-bays:
   - name: Supervisor Slot
     position: S1
-  - name: PSU1
-    position: P1
-  - name: PSU2
-    position: P2
+  - name: PSU 01
+    position: "0"
+  - name: PSU 02
+    position: "1"

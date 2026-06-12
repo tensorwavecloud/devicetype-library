@@ -1,0 +1,207 @@
+---
+manufacturer: Supermicro
+model: AS-4126GS-NMR-LCC
+slug: supermicro-as-4126gs-nmr-lcc
+part_number: AS-4126GS-NMR-LCC
+comments: >
+  [Datasheet](https://www.supermicro.com/en/products/system/datasheet/as-4126gs-nmr-lcc)
+
+u_height: 4
+is_full_depth: true
+
+weight: 53
+weight_unit: kg
+airflow: front-to-rear
+
+interfaces:
+  - name: BMC
+    type: 1000base-t
+    mgmt_only: true
+    description: 1 RJ45 1 GbE Dedicated BMC LAN port
+
+  - name: vpc0
+    type: virtual
+    description: VPCIP
+
+  - name: eno0
+    type: 400gbase-x-qsfp112
+    description: Broadcom BCM57608 400GbE (port 1/2 on dual-port card)
+
+  - name: eno1
+    type: 400gbase-x-qsfp112
+    description: Broadcom BCM57608 400GbE (port 2/2 on dual-port card)
+
+  - name: enp81s0f1np0
+    type: 10gbase-t
+    description: Intel X710
+
+  - name: enp81s0f1np1
+    type: 10gbase-t
+    description: Intel X710
+
+  - name: eth0
+    type: 400gbase-x-qsfp112
+    description: Broadcom BCM57608 400GbE - GPU Fabric NIC for MI325X-01
+
+  - name: eth1
+    type: 400gbase-x-qsfp112
+    description: Broadcom BCM57608 400GbE - GPU Fabric NIC for MI325X-02
+
+  - name: eth2
+    type: 400gbase-x-qsfp112
+    description: Broadcom BCM57608 400GbE - GPU Fabric NIC for MI325X-03
+
+  - name: eth3
+    type: 400gbase-x-qsfp112
+    description: Broadcom BCM57608 400GbE - GPU Fabric NIC for MI325X-04
+
+  - name: eth4
+    type: 400gbase-x-qsfp112
+    description: Broadcom BCM57608 400GbE - GPU Fabric NIC for MI325X-05
+
+  - name: eth5
+    type: 400gbase-x-qsfp112
+    description: Broadcom BCM57608 400GbE - GPU Fabric NIC for MI325X-06
+
+  - name: eth6
+    type: 400gbase-x-qsfp112
+    description: Broadcom BCM57608 400GbE - GPU Fabric NIC for MI325X-07
+
+  - name: eth7
+    type: 400gbase-x-qsfp112
+    description: Broadcom BCM57608 400GbE - GPU Fabric NIC for MI325X-08
+
+power-ports:
+  - name: PSU 01 - Left
+    type: iec-60320-c20
+    maximum_draw: 6600
+  - name: PSU 01 - Right
+    type: iec-60320-c20
+    maximum_draw: 6600
+  - name: PSU 02 - Left
+    type: iec-60320-c20
+    maximum_draw: 6600
+  - name: PSU 02 - Right
+    type: iec-60320-c20
+    maximum_draw: 6600
+  - name: PSU 03 - Left
+    type: iec-60320-c20
+    maximum_draw: 6600
+  - name: PSU 03 - Right
+    type: iec-60320-c20
+    maximum_draw: 6600
+  - name: PSU 04 - Left
+    type: iec-60320-c20
+    maximum_draw: 6600
+  - name: PSU 04 - Right
+    type: iec-60320-c20
+    maximum_draw: 6600
+
+module-bays:
+  - name: Motherboard
+    position: Motherboard Slot 1
+
+  - name: CPU
+    position: CPU Slot 1
+
+  - name: GPU 01
+    position: GPU Slot 1
+    description: AMD Instinct MI325X/MI355X GPU
+  - name: GPU 02
+    position: GPU Slot 2
+    description: AMD Instinct MI325X/MI355X GPU
+  - name: GPU 03
+    position: GPU Slot 3
+    description: AMD Instinct MI325X/MI355X GPU
+  - name: GPU 04
+    position: GPU Slot 4
+    description: AMD Instinct MI325X/MI355X GPU
+  - name: GPU 05
+    position: GPU Slot 5
+    description: AMD Instinct MI325X/MI355X GPU
+  - name: GPU 06
+    position: GPU Slot 6
+    description: AMD Instinct MI325X/MI355X GPU
+  - name: GPU 07
+    position: GPU Slot 7
+    description: AMD Instinct MI325X/MI355X GPU
+  - name: GPU 08
+    position: GPU Slot 8
+    description: AMD Instinct MI325X/MI355X GPU
+
+  - name: PSU 01
+    position: PSU Slot 1
+  - name: PSU 02
+    position: PSU Slot 2
+  - name: PSU 03
+    position: PSU Slot 3
+  - name: PSU 04
+    position: PSU Slot 4
+
+  - name: Drive 00
+    position: Storage Slot 1
+  - name: Drive 01
+    position: Storage Slot 2
+  - name: Drive 02
+    position: Storage Slot 3
+  - name: Drive 03
+    position: Storage Slot 4
+  - name: Drive 04
+    position: Storage Slot 5
+  - name: Drive 05
+    position: Storage Slot 6
+  - name: Drive 06
+    position: Storage Slot 7
+  - name: Drive 07
+    position: Storage Slot 8
+  - name: Drive 08
+    position: Storage
+
+  - name: Memory 01
+    position: Memory Slot 1
+  - name: Memory 02
+    position: Memory Slot 2
+  - name: Memory 03
+    position: Memory Slot 3
+  - name: Memory 04
+    position: Memory Slot 4
+  - name: Memory 05
+    position: Memory Slot 5
+  - name: Memory 06
+    position: Memory Slot 6
+  - name: Memory 07
+    position: Memory Slot 7
+  - name: Memory 08
+    position: Memory Slot 8
+  - name: Memory 09
+    position: Memory Slot 9
+  - name: Memory 10
+    position: Memory Slot 10
+  - name: Memory 11
+    position: Memory Slot 11
+  - name: Memory 12
+    position: Memory Slot 12
+  - name: Memory 13
+    position: Memory Slot 13
+  - name: Memory 14
+    position: Memory Slot 14
+  - name: Memory 15
+    position: Memory Slot 15
+  - name: Memory 16
+    position: Memory Slot 16
+  - name: Memory 17
+    position: Memory Slot 17
+  - name: Memory 18
+    position: Memory Slot 18
+  - name: Memory 19
+    position: Memory Slot 19
+  - name: Memory 20
+    position: Memory Slot 20
+  - name: Memory 21
+    position: Memory Slot 21
+  - name: Memory 22
+    position: Memory Slot 22
+  - name: Memory 23
+    position: Memory Slot 23
+  - name: Memory 24
+    position: Memory Slot 24

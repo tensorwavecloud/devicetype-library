@@ -1,57 +1,60 @@
 ---
-manufacturer: Dell
-model: PowerEdge R740xd
-slug: dell-poweredge-r740xd
+manufacturer: Supermicro
+model: AS-2115HS-TNR
+slug: supermicro-as-2115hs-tnr
+part_number: AS-2115HS-TNR
+comments: >
+  [Datasheet](https://www.supermicro.com/en/products/system/datasheet/as-2115hs-tnr)
+
 u_height: 2
 is_full_depth: true
 
-comments: |
-  [Dell R740xd Data Sheet](https://i.dell.com/sites/csdocuments/Shared-Content_data-Sheets_Documents/en/poweredge-r740xd-spec-sheet.pdf)
-
-console-ports:
-  - name: Serial
-    type: de-9
-
-power-ports:
-  - name: Power 1
-    type: iec-60320-c14
-  - name: Power 2
-    type: iec-60320-c14
+weight: 17.7
+weight_unit: kg
+airflow: front-to-rear
 
 interfaces:
-  - name: iDRAC
+  - name: BMC
     type: 1000base-t
     mgmt_only: true
+    description: 1 RJ45 1 GbE Dedicated BMC LAN port
+  - name: eth0
+    type: 10gbase-x-sfpp
+    description: AIOM Port
   - name: vpc0
     type: virtual
     description: VPCIP
-  - name: NIC0
-    type: 1000base-t
-  - name: NIC1
-    type: 1000base-t
-  - name: NIC2
-    type: 1000base-t
-  - name: NIC3
-    type: 1000base-t
-  - name: ens1f0
-    type: 1000base-t
-    description: Full-height PCIe slot 1
-  - name: ens1f1
-    type: 1000base-t
-    description: Full-height PCIe slot 2
+  - name: eth1 (Port 1)
+    type: 400gbase-x-qsfp112
+    description: BCM957608-P2200GQF0 400GbE NIC
+  - name: eth2 (Port 7)
+    type: 400gbase-x-qsfp112
+    description: BCM957608-P2200GQF0 400GbE NIC
+
+power-ports:
+  - name: PSU 01
+    type: iec-60320-c14
+    maximum_draw: 1600
+  - name: PSU 02
+    type: iec-60320-c14
+    maximum_draw: 1600
 
 module-bays:
-  - name: Power Supply 01
+  - name: PSU 01
     position: PSU Slot 1
-  - name: Power Supply 02
+  - name: PSU 02
     position: PSU Slot 2
 
-  - name: CPU 01
+  - name: Motherboard
+    position: Motherboard Slot 1
+
+  - name: CPU
     position: CPU Slot 1
-    description: Intel Xeon Processor (Up to 28 cores)
-  - name: CPU 02
-    position: CPU Slot 2
-    description: Intel Xeon Processor (Up to 28 cores)
+
+  - name: GPU 01
+    position: GPU Slot 1
+  - name: GPU 02
+    position: GPU Slot 2
 
   - name: Memory 01
     position: Memory Slot 1
@@ -103,50 +106,50 @@ module-bays:
     position: Memory Slot 24
 
   - name: Drive 01
-    position: Drive Slot 1
+    position: Storage Slot 1
   - name: Drive 02
-    position: Drive Slot 2
+    position: Storage Slot 2
   - name: Drive 03
-    position: Drive Slot 3
+    position: Storage Slot 3
   - name: Drive 04
-    position: Drive Slot 4
+    position: Storage Slot 4
   - name: Drive 05
-    position: Drive Slot 5
+    position: Storage Slot 5
   - name: Drive 06
-    position: Drive Slot 6
+    position: Storage Slot 6
   - name: Drive 07
-    position: Drive Slot 7
+    position: Storage Slot 7
   - name: Drive 08
-    position: Drive Slot 8
+    position: Storage Slot 8
   - name: Drive 09
-    position: Drive Slot 9
+    position: Storage Slot 9
   - name: Drive 10
-    position: Drive Slot 10
+    position: Storage Slot 10
   - name: Drive 11
-    position: Drive Slot 11
+    position: Storage Slot 11
   - name: Drive 12
-    position: Drive Slot 12
+    position: Storage Slot 12
   - name: Drive 13
-    position: Drive Slot 13
+    position: Storage Slot 13
   - name: Drive 14
-    position: Drive Slot 14
+    position: Storage Slot 14
   - name: Drive 15
-    position: Drive Slot 15
+    position: Storage Slot 15
   - name: Drive 16
-    position: Drive Slot 16
+    position: Storage Slot 16
   - name: Drive 17
-    position: Drive Slot 17
+    position: Storage Slot 17
   - name: Drive 18
-    position: Drive Slot 18
+    position: Storage Slot 18
   - name: Drive 19
-    position: Drive Slot 19
+    position: Storage Slot 19
   - name: Drive 20
-    position: Drive Slot 20
+    position: Storage Slot 20
   - name: Drive 21
-    position: Drive Slot 21
+    position: Storage Slot 21
   - name: Drive 22
-    position: Drive Slot 22
+    position: Storage Slot 22
   - name: Drive 23
-    position: Drive Slot 23
+    position: Storage Slot 23
   - name: Drive 24
-    position: Drive Slot 24
+    position: Storage Slot 24
