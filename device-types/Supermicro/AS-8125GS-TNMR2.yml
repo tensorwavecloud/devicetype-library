@@ -40,10 +40,6 @@ interfaces:
     mgmt_only: true
     description: 1 RJ45 1 GbE Dedicated BMC LAN port
 
-  - name: vpc0
-    type: virtual
-    description: VPCIP
-
   - name: eno0
     type: 400gbase-x-qsfp112
     description: Broadcom BCM57608 400GbE (port 1/2 on dual-port card)
@@ -52,11 +48,7 @@ interfaces:
     type: 400gbase-x-qsfp112
     description: Broadcom BCM57608 400GbE (port 2/2 on dual-port card)
 
-  - name: enp81s0f1np0
-    type: 10gbase-t
-    description: Intel X710
-
-  - name: enp81s0f1np1
+  - name: ens51np0
     type: 10gbase-t
     description: Intel X710
 
