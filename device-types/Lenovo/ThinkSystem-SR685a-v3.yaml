@@ -41,11 +41,7 @@ interfaces:
     mgmt_only: true
     description: Dedicated RJ-45 1GbE XCC Remote Management (Rear)
 
-  - name: vpc0
-    type: virtual
-    description: VPCIP
-
-  - name: eth0
+  - name: ens10np0
     type: 1000base-t
     description: Network Adaptor RJ-45 (Rear)
 
