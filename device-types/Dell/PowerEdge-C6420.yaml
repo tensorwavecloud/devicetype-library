@@ -17,17 +17,8 @@ interfaces:
   - name: iDRAC
     type: 1000base-t
     mgmt_only: true
-    description: Dedicated iDRAC Enterprise Management Port
-  - name: iDRAC Direct
-    type: other
-    mgmt_only: true
-    description: Front-panel micro-USB direct management
-  - name: LOM1
+  - name: enp94s0f0np0
     type: 10gbase-t
-    description: Embedded LOM Port (Configurable 1GbE/10GbE)
-  - name: vpc0
-    type: virtual
-    description: VPCIP
 
 module-bays:
   - name: OCP
