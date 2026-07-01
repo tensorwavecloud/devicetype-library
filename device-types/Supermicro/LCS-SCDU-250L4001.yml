@@ -3,6 +3,7 @@ manufacturer: Supermicro
 model: LCS-SCDU-250L4001
 slug: supermicro-lcs-scdu-250l4001
 part_number: LCS-SCDU-250L4001
+is_full_depth: true
 comments: >
   Supermicro In-Rack Coolant Distribution Unit (CDU).
   Application: Rack-level deployment (EIA standard).
